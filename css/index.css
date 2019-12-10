@@ -1,0 +1,279 @@
+
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+    * {
+        margin: 0;
+        font-family: 'Mali', 'Noto Sans TC', cursive;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: rgb(152, 250, 155);
+        background: linear-gradient(0deg, rgba(152, 250, 155, 1) 0%, rgba(255, 248, 151, 1) 43%, rgba(255, 215, 159, 1) 100%);
+        /* background: linear-gradient(0deg, rgb(64, 50, 82) 0%, rgba(255, 248, 151, 1) 43%, rgb(169, 159, 255) 100%); */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    header {
+        background: rgb(25, 46, 32);
+        height: 14vh;
+        max-height: 79.6px;
+        opacity: 0.7;
+        transition: all 1s;
+    }
+
+
+    header:hover {
+        opacity: 1;
+    }
+
+
+
+    .HanbergerDiv:hover {
+        background: rgb(54, 99, 69);
+    }
+
+    .HanbergerDiv:hover .X1 {
+        transform: rotate(37deg);
+
+        /* translate(0px, 10px) */
+    }
+
+    .HanbergerDiv:hover .X3 {
+        transform: rotate(-37deg);
+
+        /* translate(0px, -10px) */
+    }
+
+    .HanbergerDiv:hover .X2 {
+        transform: translate(-10px, 0);
+        opacity: 0;
+    }
+
+    .hanberger {
+        display: block;
+        height: 3px;
+        width: 24px;
+        background-color: rgb(230, 230, 112);
+        border-radius: 10px;
+        transition: all 0.5s;
+        transform-origin: left;
+
+    }
+
+    .fa-user {
+        transform: scale(1.5);
+        /* height: 5vh;
+        width: 5vh; */
+        color: rgb(230, 230, 112);
+    }
+
+    .carousel_hi {
+        height: 74vh;
+    }
+
+    .carousel_img {
+
+        height: 74vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .index_btn {
+        width: 22vw;
+        background: linear-gradient(0deg, rgba(254, 165, 0, 1) 0%, rgba(255, 241, 114, 1) 23%, rgba(250, 114, 10, 1) 100%);
+    }
+
+    footer {
+        background: rgb(25, 46, 32);
+        height: 25vh;
+        max-height: 192px;
+        opacity: 0.7;
+        transition: all 1s;
+    }
+
+    footer:hover {
+        opacity: 1;
+    }
+
+    .icon {
+        display: inline-block;
+        height: 25vh;
+        max-height: 192px;
+        position: absolute;
+        bottom: scale(0%);
+        left: 8vw;
+
+    }
+
+    .row_btn {
+        width: 23.5vw;
+        height: 30px;
+        background: linear-gradient(180deg, rgb(62, 117, 102)0%, rgb(139, 184, 161) 90%, rgb(32, 92, 62) 100%);
+        line-height: 15px;
+        border: 1px solid rgb(32, 53, 36);
+
+    }
+
+    .HanbergerDivRow {
+        width: 45px;
+
+
+    }
+
+    .loginicon {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        /* background-color: rgb(54, 99, 69); */
+    }
+
+    footer li {
+        white-space: nowrap;
+    }
+
+    .flybox {
+        border: 6px solid transparent;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgb(114, 56, 17);
+        display: inline-block;
+        position: relative;
+    }
+
+    .flybox::after {
+        position: absolute;
+        top: -6px;
+        bottom: -6px;
+        left: -6px;
+        right: -6px;
+        background: linear-gradient(to right bottom, rgb(207, 27, 3) 0%, rgb(235, 110, 8) 40%, rgb(252, 246, 198) 100%);
+        /* background: linear-gradient(to right bottom, rgb(13, 31, 109) 0%, rgb(48, 148, 230) 40%, rgb(217, 236, 240) 100%); */
+        /* background: linear-gradient(to right bottom, rgb(109, 13, 13) 0%, rgb(230, 48, 48) 40%, rgb(240, 217, 217) 100%); */
+        content: '';
+        z-index: -1;
+        border-radius: 10px;
+
+    }
+
+    @media screen and (max-width:767px) {
+        .flybox {
+            width: 45.5vw;
+            height: 30vh;
+            /* min-width: 150px; */
+            min-height: 210px;
+            max-width: 190px;
+            max-height: 220px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .funcmain {
+            justify-content: space-around;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .flybox {
+            width: 45.5vw;
+            height: 40vh;
+            min-width: 150px;
+            max-width: 190px;
+            max-height: 250px;
+            margin: 20px;
+        }
+
+        .funcmain {
+            justify-content: left;
+        }
+
+        .flybox:hover {
+            box-shadow: 3px 3px 3px rgb(73, 36, 12);
+        }
+
+        .infotext:hover {
+            height: 100%;
+            background: linear-gradient(to top, rgba(3, 3, 3, 0.9), rgba(51, 51, 51, 0.5));
+        }
+
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1023px) {
+        .flybox {
+            width: 30vw;
+            height: 30vh;
+            min-height: 210px;
+            margin-bottom: 20px;
+        }
+
+        .funcmain {
+            justify-content: space-around;
+        }
+    }
+
+
+
+    .information {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(2, 4, 5, 0.5)25%, rgba(255, 255, 255, 0) 30%), url(/images/back/back1.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        display: inline-block;
+
+    }
+
+
+    .information .badge {
+        font-size: 10px;
+        height: 15px;
+        position: absolute;
+        right: 8px;
+        top: 10px;
+    }
+
+    .information .infotitle {
+        background: rgb(27, 27, 27);
+        border-right: 3px solid rgb(27, 27, 27);
+        border-left: 3px solid rgb(27, 27, 27);
+        position: relative;
+
+    }
+
+    .infotext {
+        width: 100%;
+        height: 35%;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+
+        transition: all 1.5s;
+    }
+
+    .information:hover {
+        cursor: pointer;
+    }
+
+
+    .add {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        line-height: 30px;
+        position: fixed;
+        bottom: 8px;
+        right: 8px;
+        z-index: 1;
+        background: radial-gradient(circle, rgba(44, 135, 43, 1) 55%, rgb(61, 139, 59) 68%, rgb(24, 63, 21) 77%);
+        box-shadow: 4px 3px 6px rgb(3, 41, 29);
+    }
+
+    .add:active {
+        box-shadow: 3px 2px 3px rgb(0, 17, 12);
+    }

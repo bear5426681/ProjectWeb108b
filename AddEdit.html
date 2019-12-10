@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- 字體 -->
+    <link href="https://fonts.googleapis.com/css?family=Mali:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,500&display=swap" rel="stylesheet">
+    <title>HoMe .Find way鸚鵡回家</title>
+</head>
+
+
+<body>
+
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist" style="background: darkseagreen">
+        <li class="nav-item">
+            <a class="nav-link active" id="addnav" data-toggle="tab" href="#add" role="tab" aria-controls="home"
+                aria-selected="true">新增</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="editnav" data-toggle="tab" href="#edit" role="tab" aria-controls="profile"
+                aria-selected="false">修改</a>
+        </li>
+
+    </ul>
+    <!--nav內容-->
+    <div class="tab-content" id="funcfly">
+        <!-- 新增表單-->
+        <div class="tab-pane fade show active" id="add" role="tabpanel" aria-labelledby="add">
+
+            <form action="" method="POST">
+
+                <div class="form-row px-3 ">
+                    <div class="form-group col-md-6 ">
+                        <label for="InputEmail1 ">帳號：</label>
+                        <input type="email" class="form-control  " id="InputEmail1" aria-describedby="emailHelp"
+                            placeholder="修改該筆資料之帳號">
+                        <small id="emailHelp" class="form-text text-muted">設定作用於未來修改</small>
+                    </div>
+
+                </div>
+
+                <div class="form-row px-5 ">
+                    <div class="form-group form-check form-check-inline ">
+                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">多選</label>
+                    </div>
+                    <div class="form-group form-check  form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">多選</label>
+                    </div>
+                    <div class="form-group form-check  form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">多選</label>
+                    </div>
+                    <div class="form-group form-check  form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">多選</label>
+                    </div>
+                </div>
+
+                <div class="form-row px-3 ">
+                    <div class="form-group col-md-6 ">
+                        <label for="InputEmail1 ">帳號：</label>
+                        <input type="email" class="form-control  " id="InputEmail1" aria-describedby="emailHelp"
+                            placeholder="修改該筆資料之帳號">
+                        <small id="emailHelp" class="form-text text-muted">設定作用於未來修改</small>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="InputPassword1">密碼：</label>
+                        <input type="password" class="form-control" id="editPassword" placeholder="Password">
+                    </div>
+                </div>
+                <iframe width='100%' height='500' frameborder='0' scrolling='no' marginheight="0" marginwidth="0"
+                    src=http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=24.811522,120.968176&z=16&output=embed&t=>
+                    </iframe> <button type="submit" class="btn btn-primary offset-3 col-6">確認</button>
+
+            </form>
+
+        </div>
+        <!--/ 新增表單-->
+        <!-- 編輯表單-->
+        <div class="tab-pane fade" id="edit" role="tabpanel" aria-labelledby="edit">
+            <form action="" method="POST">
+                <div class="form-row p-3 ">
+
+                    <div class="form-group col-md-6 ">
+                        <label for="InputEmail1 ">修改帳號：</label>
+                        <input type="email" class="form-control  " id="InputEmail1" aria-describedby="emailHelp"
+                            placeholder="修改該筆資料之帳號">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="InputPassword1">修改密碼：</label>
+                        <input type="password" class="form-control" id="editPassword" placeholder="Password">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary offset-3 col-6">確認</button>
+            </form>
+
+
+        </div><!-- /編輯表單-->
+
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

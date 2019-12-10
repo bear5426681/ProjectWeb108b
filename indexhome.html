@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- 字體 -->
+    <link href="https://fonts.googleapis.com/css?family=Mali:400,700|Noto+Sans+TC:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <title>HoMe .Find way鸚鵡回家</title>
+</head>
+<style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, rgba(10, 48, 23, 1)0%, rgba(10, 48, 23, 0)100%);
+        /* clip-path: polygon(0 100%, 0 0, 75% 0, 75% 5.5%, 80% 7.5%, 75% 9.5%, 75% 100%); */
+        overflow-x: hidden;
+        color: white;
+
+        transition: 0.5s;
+        /* padding-top: 60px; */
+    }
+
+    /* .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    } */
+
+    /* .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    } */
+
+    #movenav {
+        transition: margin-left .5s;
+    }
+
+
+
+
+
+    .mainfunchead {
+        /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 52% 100%, 50% 88%, 48% 100%, 0 100%); 中*/
+        /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 27% 100%, 25% 88%, 23% 100%, 0 100%); 左*/
+
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 77% 100%, 75% 88%, 73% 100%, 0 100%);
+    }
+
+    .cliphead {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 60%, 15px 50%, 0 40%)
+    }
+</style>
+
+<body>
+    <nav id="mySidenav" class="sidenav">
+
+        <div class="h-25  border-bottom border-white d-flex align-items-center justify-content-start">
+            <img src="/images/LOGO-4white-nofont.svg" alt="" class=" rounded-circle bg-secondary m-2 ml-5"
+                style="width: 80px;height:80px;">
+            <small>未登入</small>
+        </div>
+
+
+        <a href="" class=" btn btn-block btn-dark bg-warning  m-0 rounded-0   text-left">
+            <div>首頁</div>
+        </a>
+        <a href="" class=" btn btn-block btn-dark bg-warning  m-0 rounded-0  text-left ">
+            <div>飛失</div>
+        </a>
+        <a href="" class=" btn btn-block btn-dark bg-warning  m-0 rounded-0  text-left">
+            <div>拾獲</div>
+        </a>
+        <a href="" class=" btn btn-block btn-dark bg-warning  m-0 rounded-0  text-left">
+            <div>目擊</div>
+        </a>
+        <a href="" class=" btn btn-block btn-dark bg-warning  m-0 rounded-0  text-left">
+            <div>送養</div>
+        </a>
+
+    </nav>
+
+    <div class="movenav " id="movenav">
+
+        <!-- 滾動後 -->
+        <div class="container-fluid" style="position: relative; overflow: hidden; ">
+            <!-- 頭 -->
+            <header class="row nav d-flex align-items-end justify-content-between mainfunchead sticky"
+                style="opacity: 1 ;height: 55px;">
+                <div class="col-lg-3  text-center d-none d-lg-block ">
+                    <h1 class="h3 text-white mt-2  bigfont " style="line-height: 20px;white-space: nowrap;">HoMe .Find
+                        Way<br> <span class="text-white" style="font-size: 16px; font-family: cwtexyen;">鸚 鵡 回 家</span>
+                    </h1>
+                </div>
+
+                <div class=" HanbergerDiv HanbergerDivRow btn  d-lg-none opennav">
+                    <div class="hanberger X1  mt-1"></div>
+                    <div class="hanberger X2  mt-1"></div>
+                    <div class="hanberger X3  mt-1 mb-1"></div>
+                </div>
+
+
+                <div class="  btn-group d-lg-none mb-1">
+                    <button class="btn row_btn disabled ">飛失</button>
+                    <button class="btn row_btn">目擊</button>
+                    <button class="btn row_btn ">拾獲</button>
+                </div>
+
+
+                <div class="loginicon d-lg-none d-flex  justify-content-center align-items-center  btn ">
+                    <span class="far fa-user  d-lg-none "></span>
+                </div>
+
+                <div class="offset-lg-8 col-lg-1  d-flex  justify-content-start align-items-lg-center d-none ">
+                    <span class="text-warning d-none d-lg-block  mb-4  bigfont">log in</span>
+                </div>
+            </header>
+            <!-- /頭 -->
+            <!-- lg版的功能列-->
+            <div class="row mt-3 mb-0  ">
+                <div class="offset-2 col-4 d-none d-lg-block">
+                    <form action="" class="form-group ">
+                        <div class="input-group mb-3 badge-pill border bg-white" style="width: 400px">
+                            <input type="text" class="form-control border-0 badge-pill bg-transparent"
+                                placeholder="腳環號/品種/" style="width: 60%;position: relative;left: -10px;">
+                            <button class="border-0 bg-transparent btn ml-5" type="button"><i
+                                    class="fa fa-search"></i></button>
+                            <button class="border-0 bg-transparent btn text-info" type="button"
+                                style="position: absolute;right: 55px;"><i class="fa fa-list"></i></button>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="offset-3 col-auto  align-self-center d-none d-lg-block ">
+                    <ul>
+                        <a href="">
+                            <li class="list-unstyled d-inline ">圖示 </li>
+                        </a><span>|</span>
+                        <a href="">
+                            <li class="list-unstyled d-inline ">清單 </li>
+                        </a><span>|</span>
+                        <a href="">
+                            <li class="list-unstyled d-inline ">地圖</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row ">
+                <!-- 內容框框 -->
+                <div class="col-lg-2 d-none d-lg-block ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia alias
+                    tempore quis accusamus optio </div>
+
+                <!-- 主要內容 -->
+                <div class="col-lg-9 p-1 d-flex flex-wrap funcmain">
+                    <div class="flybox   ">
+                        <div class="information " style="border-radius: 5px;  display: inline-block;
+    overflow: hidden;" data-toggle="modal" data-target="#popinfo"><img src="/images/back/back1.jpg" alt=""
+                                class="img-fluid">
+                        </div>
+                        <!-- 圖片內容 -->
+                        <div class="infotext  text-white  ">
+                            <span class="infotitle bigfont">和尚
+                            </span><span class=" badge badge-pill badge-primary  mt-1 ">今天</span>
+                            <p class="infobody  pl-2  bigfont ">
+                                <span class="small infotime  bigfont">2019-04-14
+                                    <span class=" infoarea ">19:30</span></span><br>新竹市北區
+                            </p>
+                            <p class="pl-2 small">飛失地址：<span>文化路一段122巷50-1號2樓之4</span></p>
+                            <P class="pl-2 small">腳環號：<span>RB15529Y</span>、<span>RB15529Y</span></P>
+                        </div>
+
+                    </div>
+
+                    <!-- 跳現框 -->
+                    <div class="modal fade " id="popinfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg ">
+                            <div class="modal-content bg-light">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">&times;</button>
+
+                                </div>
+                                <div class="modal-body ">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6  ">
+                                            <img src="/images/back/back (5).jpg" alt="" class="img-thumbnail"></div>
+                                        <div class="col-12 col-lg-6  my-2">
+                                            <p>品種：<span>玄鳳鸚鵡（</span><span>派特</span><span>珍珠</span>）</p>
+                                            <p>飛失時間：<span>2019-07-11</span>　<span>19:30</span></p>
+                                            <p>飛失地點：<span>台北市大安區</span><span>文化路一段122巷50-1號2樓之4</span><span>從家裡陽台往某某路飛去</span>
+                                            </p>
+                                            <P>特徵：<span>頭毛少一搓</span></P>
+                                            <P>腳環號碼：<span>RB15529Y</span>、<span>RB15529Y</span></P>
+                                            <p>聯絡人：<span>陳小小</span></p>
+                                            <p>聯絡電話：<span>0919555093</span></p>
+
+
+                                        </div>
+                                        <div class="col-12">
+                                            <p>其他聯絡方式：<span>LINE</span></p>
+                                        </div>
+                                        <div class="col-12   bg-info border-danger border pt-2 mb-3">
+                                            <p>備註：<br>
+                                                <span>學生電子商務郵箱一時連續原料訊息工廠人們擁有處罰著名解放辛苦，實業別的收到結合，整個趕緊湖口很少出現人數功能，那個語言廠商使得，關心真實性降低日韓，來源操作系統基層透明未知明星屬性每頁鄉民們近年來獎勵儀器國際，分別告知此次便利商店快捷登陸人類因為頓時忽然。</span>
+                                            </p>
+                                        </div>
+
+                                        <iframe width='100%' height='500' frameborder='0' scrolling='no'
+                                            marginheight="0" marginwidth="0"
+                                            src=http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=24.811522,120.968176&z=16&output=embed&t=>
+                                            </iframe> </div> </div> <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">關閉</button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal -->
+                        </div>
+                        <div class="flybox ">
+                            <div class="information text-white  "
+                                style="border-radius: 5px; background-image: url('/images/back/back (5).jpg');"></div>
+                        </div>
+                        <div class="flybox ">
+                            <div class="information text-white  "
+                                style="border-radius: 5px;  background-image: url('/images/back/back (6).jpg')"></div>
+                        </div>
+                        <div class="flybox ">
+                            <div class="information text-white  "
+                                style="border-radius: 5px;  background-image: url('/images/back/back (7).jpg')"></div>
+                        </div>
+                        <div class="flybox ">
+                            <div class="information text-white "
+                                style="border-radius: 5px;   background-image: url('/images/back/back (3).jpg')"></div>
+                        </div>
+                        <div class="flybox ">
+                            <div class="information text-white  " style="border-radius: 5px; "></div>
+                        </div>
+                        <div class="flybox ">
+                            <div class="information text-white  " style="border-radius: 5px; "></div>
+                        </div>
+                        <div class="flybox ">
+                            <div class="information text-white  " style="border-radius: 5px; "></div>
+                        </div>
+                        <div class="flybox ">
+                            <div class="information text-white  " style="border-radius: 5px; "></div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <!--/ 主要內容 -->
+
+                    <!-- .modal -->
+                    <div class="modal fade " id="popadd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-lg ">
+                            <!-- .modal-content -->
+                            <div class="modal-content bg-light">
+                                <div class="modal-header">
+
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">&times;</button>
+
+                                </div>
+                                <div class="modal-body ">
+
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div>
+                    </div><!-- /.modal -->
+
+
+
+                    <div class="col-lg-1  d-none d-lg-block"></div>
+
+
+
+                    <div>
+
+                        <!-- 內容清單 -->
+                    </div>
+                    <!-- 浮動捲上 -->
+                    <a class="btn  add" id="BackTop"><span class="up1"></span><span class="up2"></span></a>
+                    <!-- data-toggle="modal" data-target="#popadd" href="AddEdit.html"  -->
+
+                </div>
+            </div>
+            <div class="container-fluid">
+                <footer class="row  text-white  small d-flex justify-content-center align-items-center">
+
+                    <img src="images/LOGO-4white-nofont.svg" alt="" class="icon d-none  d-md-block ">
+
+                    <div class="col-3 text-right">
+                        <ul class="list-unstyled">
+                            <a href="" class="text-white ">
+                                <li class="my-2"> 網站地圖</l>
+                            </a>
+                            <a href="" class="text-white ">
+                                <li class="my-2"> 使用方法</li>
+                            </a>
+                            <a href="" class="text-white ">
+                                <li class="mt-2">感謝幫助</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-3 text-center">
+                        <ul class="list-unstyled">
+                            <a href="" class="text-white">
+                                <li class="my-2">飛失列表</li>
+                            </a>
+                            <a href="" class="text-white">
+                                <li class="my-2">拾獲列表</li>
+                            </a>
+                            <a href="" class="text-white">
+                                <li class="my-2">目擊列表</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-3 text-left ">
+                        <ul class="list-unstyled">
+                            <a href="" class="text-white">
+                                <li class="my-2">網站介紹</li>
+                            </a>
+                            <a href="" class="text-white">
+                                <li class="my-2">作者介紹</li>
+                            </a>
+                            <a href="" class="text-white">
+                                <li class="my-2">聯絡我們</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 text-white text-center">
+                        <span>&copy;2019 - HoMe .Find Way</span>
+                    </div>
+                </footer>
+            </div>
+            <div class="container-fluid fixed-bottom" id="bottomfunc">
+                <div class="row d-flex justify-content-between  bg-white text-nowrap d-lg-none p-1">
+                    <a href="" class="bg-light col text-center text-dark ">
+                        <div class=" justify-content-center"><i class="far fa-plus-square"></i></div>
+                    </a>
+                    <a href="" class="bg-light col text-center text-dark">
+                        <div class="  text-center"> <i class="far fa-edit"></i></div>
+                    </a>
+                    <a href="" class="bg-light col text-center text-dark ">
+                        <div class=""><i class="fas fa-search"></i></div>
+                    </a>
+                    <a href="" class="bg-light col text-center text-dark">
+                        <div class=""><i class="fas fa-th-large"></i></div>
+                    </a>
+                    <a href="" class="bg-light col text-center text-dark">
+                        <div class=" "><i class="fas fa-list-ul"></i></div>
+                    </a>
+                    <a href="" class="bg-light col text-center text-dark">
+                        <div class=""><i class="fas fa-map-marked-alt"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+
+</body>
+<script>
+
+    $(function () {
+        //滾到最上動畫
+        $('#BackTop').click(function () {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 333);
+        });
+        //滾到600才顯示
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 600) {
+                $('#BackTop').fadeIn(222);
+                $('.up1').addClass('up1t');
+                $('.up2').addClass('up2t');
+            } else {
+                $('#BackTop').stop().fadeOut(222);
+                $('.up1').removeClass('up1t');
+                $('.up2').removeClass('up2t');
+            }
+        }).scroll();
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 400) {
+                $('#bottomfunc').fadeIn(222);
+            } else {
+                $('#bottomfunc').stop().fadeOut(222);
+            }
+        }).scroll();
+
+    });
+
+    //
+
+
+
+    //側邊欄動畫
+    var x = false;
+    $('.opennav').on('click', function () {
+        if (!x) {
+
+            $("#mySidenav").css("width", "250px");
+            $("#movenav").css({
+                'marginLeft': "250px",
+                'width': "100%",
+            });
+            for (i = 1; i <= 3; i++) {
+                $(".X" + i).addClass('X' + i + 'Closs');
+            };
+            $('#cliphead').addClass('cliphead');
+
+            x = true;
+        }
+        else {
+
+            $("#mySidenav").css("width", "0"),
+                $("#movenav").css({
+                    'marginLeft': "0",
+                });
+            for (i = 1; i <= 3; i++) {
+                $(".X" + i).removeClass('X' + i + 'Closs');
+            }
+            $('#cliphead').removeClass('cliphead');
+            x = false;
+        }
+    }
+    )
+
+
+
+
+
+</script>
+
+</html>
